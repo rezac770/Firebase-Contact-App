@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #323334;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+.title {
+  font-weight: bold;
+}
+.search-wraper > i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+.plus-b {
+  display: block;
+  font-weight: bolder;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.parent-contact {
+  margin: 20px auto;
+}
+.card-contact > i {
+  color: #f6820c;
+  border: 1px solid #f6820c;
+  padding: 10px;
+  border-radius: 50%;
+}
+.card-contact {
+  display: flex;
+  filter: drop-shadow(1px 1px 1px #eeeeec);
+  padding: 0 10px;
+  margin: 10px 0;
+  box-shadow: 1px 1px 2px #ffeaae;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-color: #ffeaae;
+}
+.info-contact {
+  padding: 10px;
+  margin-right: auto;
+  margin-left: 10px;
+}
+.info-contact h1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.edit-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  min-width: 100px;
+  padding: 5px 0;
+}
+.edit-contact i:last-child {
+  color: #5f00d9;
+}
+.edit-contact i {
+  cursor: pointer;
+  font-size: 20px;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #24252600;
+  box-shadow: 1px 1px 1px rgb(255, 255, 255);
+  border-top-color: #dfa907;
+  border-radius: 50%;
+  animation: go 1s infinite ease-in;
+  margin: 10px auto;
+}
+@keyframes go {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.add-contact {
+  position: absolute;
+  border: 1px solid black;
+}
+.parent-modal {
+  min-height: 200px;
+  background: white;
+  max-width: 50%;
+}
+.parent-modal i {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: auto;
+  display: block;
+  width: 50px;
+
+  text-align: center;
+}
+.parent-not {
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+}
+.parent-not img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.parent-not p {
+  color: white;
+}
